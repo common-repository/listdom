@@ -1,0 +1,31 @@
+{
+  "siteOptions": {
+    "blogname": "Listdom"
+  },
+  "landingPage": "/wp-admin/admin.php?page=listdom&tab=dummy-data",
+  "preferredVersions": {
+    "php": "8.0",
+    "wp": "latest"
+  },
+  "phpExtensionBundles": [],
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "step": "installPlugin",
+      "pluginZipFile": {
+        "resource": "wordpress.org/plugins",
+        "slug": "listdom"
+      },
+      "progress": {
+        "weight": 2
+      }
+    }
+  ]
+}
